@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stegano Script</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1>🔐 Stegano Script</h1>
+    <p class="tagline">A Modern Solution for Securing Hidden Messages</p>
+  </header>
+
+  <main>
+    <section class="container">
+      <!-- Tab Navigation -->
+      <div class="tab-navigation">
+        <button class="tab-btn active" data-target="encode">🔤 Encode</button>
+        <button class="tab-btn" data-target="decode">🛠 Decode</button>
+      </div>
+
+      <!-- Encoding Tab -->
+      <div class="tab-content" id="encode">
+        <h2>Encode Your Secret Message</h2>
+        <div class="input-group">
+          <textarea id="plainText" placeholder="Enter plain text..."></textarea>
+          <input type="text" id="binaryMessage" placeholder="Binary message (e.g., 10101)">
+          <select id="encodingMethod">
+            <option value="selective">Selective Hiding</option>
+            <option value="whitespace">Whitespace Method</option>
+          </select>
+          <button id="encodeBtn">Encode Now</button>
+        </div>
+        <div class="output-group">
+          <h3>📝 Encoded Text:</h3>
+          <textarea id="encodedText" readonly></textarea>
+        </div>
+      </div>
+
+      <!-- Decoding Tab -->
+      <div class="tab-content" id="decode" style="display: none;">
+        <h2>Decode Your Message</h2>
+        <div class="input-group">
+          <textarea id="encodedInput" placeholder="Paste encoded text here..."></textarea>
+          <select id="decodingMethod">
+            <option value="selective">Selective Hiding</option>
+            <option value="whitespace">Whitespace Method</option>
+          </select>
+          <button id="decodeBtn">Decode Now</button>
+        </div>
+        <div class="output-group">
+          <h3>🧩 Decoded Binary Message:</h3>
+          <textarea id="decodedText" readonly></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>🚀 Built by the <strong>Stegano Script Team</strong> | Secure Your Messages Today!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Center the entire content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header */
+header {
+    padding: 40px;
+    background: #6c5ce7;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffeaa7;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #f1f1f1;
+    line-height: 1.5;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    padding: 30px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #dfe6e9;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn.active {
+    background: #6c5ce7;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.tab-btn:hover {
+    background: #341f97;
+    color: #fff;
+}
+
+/* Form Elements */
+textarea, input, select {
+    width: 100%;
+    padding: 16px;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #341f97;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Output Box */
+.output {
+    margin-top: 30px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.output h3 {
+    margin: 0 0 15px;
+    font-size: 1.3rem;
+    color: #6c5ce7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+    background: #2d3436;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer strong {
+    color: #ffeaa7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
